@@ -1,0 +1,140 @@
+/* Estilos globales */
+body {
+    background-color: #FFD700; /* Fondo dorado */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .music-player-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  /* Título principal */
+  .music-player-container h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Texto de la canción actual */
+  .now-playing h2 {
+    font-size: 1.5rem;
+    color: #444;
+    margin-bottom: 20px;
+  }
+  
+  /* Imagen de la portada del álbum */
+  .now-playing img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
+  }
+  
+  /* Contenedor de la canción y controles */
+  .now-playing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .audio-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Estilo del reproductor de audio */
+  audio {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos de los botones de control */
+  .audio-controls button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .audio-controls button:hover {
+    background-color: #e65a50;
+  }
+  
+  /* Barra de búsqueda */
+  .search-bar {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .search-bar input:focus {
+    border-color: #ff6f61;
+  }
+  
+  /* Lista de canciones */
+  .song-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .song-list li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .song-list li button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .song-list li button:hover {
+    background-color: #e65a50;
+  }
+  
+  /* Pequeña transición cuando se cambia la canción */
+  .now-playing img,
+  .audio-controls {
+    transition: all 0.3s ease;
+  }
+  
